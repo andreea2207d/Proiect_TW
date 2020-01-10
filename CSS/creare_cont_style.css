@@ -1,0 +1,140 @@
+body{
+	background-image: url("../Imagini/fundal2.jpg");
+	margin: 0;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
+nav {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
+}
+nav ul {
+    margin: 0;
+    padding-left: 0;
+	position: absolute;
+	background-color: #111;
+	list-style-type: none;
+}
+nav li {
+    color: #fff;
+	background-color: #111;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+nav li a {
+  color: #fff;
+}
+nav li:hover,
+nav li:focus-within {
+	background-color: #ff9966;
+    cursor: pointer;
+}
+nav li:focus-within a {
+  outline: none;
+}
+nav li a:hover { color:black;}
+nav a.active {
+   color: #ccccff;
+}
+nav ul li ul {
+	background-color: #111;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 10.5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;	
+}
+
+nav ul li:hover >  ul,
+ul li:focus-within >  ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.loginbox{
+	width: 585px;
+	height: 1500px;
+	background: #000;
+	color: #fff;
+	opacity: 0.75;
+	margin-top: -550px;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, 50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+}
+
+.click{
+	 text-align: center;
+}
+
+h1, h2{
+	margin: 15px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+form li {
+list-style: none;
+margin-bottom: 10px;
+}
+
+form ul li label{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:18px;
+}
+
+form ul li input, select, span {
+margin-bottom: 15px;
+font-size: 17px;
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+}
+
+[type="submit"] {
+    padding: 2%;
+    font-size: 18px;
+    width: 100%;
+    background-color: white;
+    color: black;
+	margin-top: 30px;
+}
+
+p {
+margin-left: 70px;
+font-weight: bold;
+}
+
+
+

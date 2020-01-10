@@ -1,0 +1,362 @@
+body{
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	background-image: url(../Imagini/fundal4.jpg);
+	-webkit-background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
+nav {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+	position: absolute;
+	background-color: #111;
+	list-style-type: none;
+}
+li {
+    color: #fff;
+	background-color: #111;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+li a {
+  color: #fff;
+}
+li:hover,
+li:focus-within {
+	background-color: #ff9966;
+    cursor: pointer;
+}
+li:focus-within a {
+   outline: none;
+}
+li a:hover { color:black;}
+a.active {
+   color: #ccccff;
+}
+ul li ul {
+	background-color: #111;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 10.5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;	
+}
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+/*Animatie1*/
+.text {
+	margin: 60px;
+    text-align: center;
+    font-size: 60px;
+    font-family: Lucida Calligraphy;
+    letter-spacing: 1px;
+}
+.text_animated {
+    background: linear-gradient(to right, #000000, #c0c0c0, #989898, #787878, #383838, #000000, #111);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.info{
+	text-align: center;
+	font-size: 3vw;
+	font-family:Lucida Calligraphy;
+	color: #111;
+	text-decoration: underline;
+	margin: 30px;
+	line-height: 10px;
+}
+
+.banner{
+	margin: 30px;
+	opacity: 0.75;
+	text-align: center;
+}
+.banner img{
+	border: 1px solid #000;
+    border-radius: 8px;
+    padding: 5px;
+	background-color: #fff;
+	width: 500px;
+	height: 150px;
+}
+
+.info1{
+	text-align: center;
+	font-size: 1.5vw;
+	font-family:Lucida Calligraphy;
+	color: #111;
+	line-height: 10px;
+	font-weight: bold;
+}
+
+/*Animatie2*/
+@keyframes an-pupils {
+    from {
+        left: 60px;
+    }
+    to {
+        left: 0px;
+    }
+}
+@keyframes an-ears {
+    from {
+       top:0;
+    }
+    to {
+       top:25px;
+    }
+}
+#cat {
+	width: 480px;
+	margin:20px auto;  
+}
+#head {
+	width: 400px;
+	height: 370px;
+	background-color: #171717;
+	border-radius: 50%;
+	margin: auto;
+}
+#ears {
+	height: 65px;
+	position: relative;
+	left: 35px;
+	animation-name: an-ears;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.ear{
+	width: 0; 
+	height: 0; 
+	border-left: 90px solid transparent;  
+	border-right: 90px solid transparent; 
+	border-bottom: 160px solid #171717; 
+	font-size: 0;
+	line-height: 0;
+	float: left;
+	margin-right: 60px;
+	-ms-transform: rotate(35deg); 
+    -webkit-transform: rotate(35deg); 
+    transform: rotate(35deg);    
+}
+.ear:first-child {
+	-ms-transform: rotate(-35deg); 
+    -webkit-transform: rotate(-35deg); 
+    transform: rotate(-35deg);
+}
+#eyes {
+	clear: both;
+	width: 350px;
+	position: relative;
+	top: 25px;
+	left: 53px;
+}
+.eye {
+	width: 120px;
+	height: 120px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	float: left;
+}
+.eye:first-child {
+	margin-right: 50px;
+}
+.pupil {
+	position: relative;
+	top:40px;
+	background-color: #000000;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation-name: an-pupils;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.pupil_ref {
+	background-color: #FFFFFF;
+	border-radius: 45%;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 40px;
+	left: 10px;
+}
+#nose {
+	width: 45px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	position: relative;
+	top: 160px;
+	left: 170px;
+}
+#baffi_sx {
+position: relative;
+left: -100px;
+top: 85px;
+-ms-transform: rotate(10deg); 
+    -webkit-transform: rotate(10deg); 
+    transform: rotate(10deg);
+}
+#baffi_dx {
+position: relative;
+left: 223px;
+top: 96px;
+-ms-transform: rotate(-10deg); 
+    -webkit-transform: rotate(-10deg); 
+    transform: rotate(-10deg);
+}
+.baffo{
+  width:260px; 
+  height:5px;  
+  border:solid 3px #000;
+  border-color:#000 transparent transparent transparent;
+  border-radius: 60%/30px 30px 0 0;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 18px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 21px;
+}
+.facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 50px;
+}
+.twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 50px;
+}
+.instagram {
+  border-radius: 50px;
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 50px;
+}
+.whatsapp{
+	background-color:#25d366;
+	color:#FFF;
+    border-radius: 50px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 75vh;
+}
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  transition: .5s;
+}
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+nav {
+	font-size: 28px;
+}
+ul li ul {
+	min-width: 18rem;
+}
+}
+
+@media only screen and (max-width: 1200px){
+.container{
+		height: 50vh;
+		width: 100%;
+		position: relative;
+		left: 5%;
+}
+}
+@media (max-width: 1200px){
+.icon-bar{
+	position: fixed;
+	top: 40%;
+}
+.text{
+	margin-top: 17rem;
+}
+}		
+

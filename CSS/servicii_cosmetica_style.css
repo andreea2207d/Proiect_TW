@@ -1,0 +1,170 @@
+body{
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	background-image: url(../Imagini/fundal8.jpg);
+	-webkit-background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
+nav {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+	position: absolute;
+	background-color: #111;
+	list-style-type: none;
+}
+li {
+    color: #fff;
+	background-color: #111;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+li a {
+  color: #fff;
+}
+li:hover,
+li:focus-within {
+	background-color: #ff9966;
+    cursor: default;
+}
+li:focus-within a {
+  outline: none;
+}
+li a:hover { color:black;}
+a.active {
+   color: #ccccff;
+}
+ul li ul {
+	background-color: #111;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 10.5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;	
+}
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+table {
+	position: relative;
+	border-collapse: collapse; 
+	margin: 75px auto;	
+	width: 500px; 
+} 
+table, th, td { 
+ border: 1px solid #111; 
+} 
+th{
+	height: 50px;
+	color: white;
+	background-color: #000;
+}
+td{
+	padding: 12px;
+	font-weight: bold;
+}
+tr:nth-child(even){ 
+ background: transparent; 
+} 
+tr:hover { 
+ background: #ccccff; 
+} 
+
+* {
+  box-sizing: border-box;
+}
+img {width: 100%;}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+ table{
+	position: relative;
+	margin: 175px auto;
+	width: 350px;
+}
+th{
+	height: 40px;
+	font-size: 15px;
+}
+td{
+	padding: 10px;
+	font-size: 15px;
+}
+nav {
+	font-size: 13px;
+}
+ul li ul {
+	min-width: 11rem;
+}
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+table{
+	position: relative;
+	margin: 175px auto;
+	width: 300px;
+}
+th{
+	height: 40px;
+	font-size: 12px;
+}
+td{
+	padding: 10px;
+	font-size: 15px;
+}
+nav {
+	font-size: 11px;
+}
+ul li ul {
+	min-width: 9rem;
+}
+}
+

@@ -1,0 +1,160 @@
+body{
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	background-image: url(../Imagini/fundal6.jpg);
+	-webkit-background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	text-align: center;
+}
+nav {
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
+}
+nav ul {
+    margin: 0;
+    padding-left: 0;
+	position: absolute;
+	background-color: #111;
+	list-style-type: none;
+}
+nav li {
+    color: #fff;
+	background-color: #111;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+nav li a {
+  color: #fff;
+}
+nav li:hover,
+li:focus-within {
+	background-color: #ff9966;
+    cursor: default;
+}
+nav li:focus-within a {
+  outline: none;
+}
+nav li a:hover { color:black;}
+a.active {
+   color: #ccccff;
+}
+nav ul li ul {
+	background-color: #111;
+	visibility: hidden;
+	opacity: 0;
+	min-width: 10.5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;	
+}
+nav ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+table { 
+ position: relative;
+ border-collapse: collapse; 
+ margin: 200px auto; 
+ width: 800px; 
+} 
+table, th, td { 
+ border: 1px solid #111; 
+} 
+th{
+	height: 50px;
+	color: white;
+	background-color: #000;
+}
+td{
+	padding: 12px;
+	font-weight: bold;
+}
+tr:nth-child(even){ 
+ background: transparent; 
+} 
+tr:hover { 
+ background: #ccccff; 
+} 
+
+.informatii{
+	padding: 30px;
+}
+.video{
+	text-align: center;
+}
+.video video{
+	width: 600px;
+}
+.audio{
+	text-align: center;
+}
+.audio audio{
+	width: 300px;
+	margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+nav {
+	font-size: 13px;
+}
+nav ul li ul {
+	min-width: 11rem;
+}
+table{
+	position: relative;
+	margin: 200px auto;
+	width: 575px;
+}
+th{
+	height: 40px;
+	font-size: 15px;
+}
+td{
+	padding: 10px;
+	font-size: 15px;
+}
+}
+@media (max-width: 600px) {
+nav {
+	font-size: 11px;
+}
+nav ul li ul {
+	min-width: 7rem;
+}
+table{
+	position: relative;
+	margin: 175px auto;
+	width: 300px;
+}
+th{
+	height: 40px;
+	font-size: 12px;
+}
+td{
+	padding: 10px;
+	font-size: 15px;
+
+
+
