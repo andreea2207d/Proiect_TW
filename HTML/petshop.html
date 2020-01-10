@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link
+rel="stylesheet"
+type="text/css"
+href="../CSS/petshop_style.css"
+/>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/png" href="../Imagini/images.png"/>
+ 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/2d4133adc7.js"></script>
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>My Pet's Vet</title>
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li><a href="acasa.html">Acasa</a></li>
+    <li><a href="#">Servicii</a>
+      <ul class="dropdown">
+        <li><a href="servicii_medicale.html">Servicii medicale</a></li>
+        <li><a href="servicii_cosmetica.html">Servicii de cosmetica</a></li>
+        <li><a href="prezentare.html">Prezentare</a></li>
+		<li><a class="active" href="petshop.html">Petshop</a></li>
+      </ul>
+    </li>
+	<li><a href="contact.html">Contact</a></li>
+    <li><a href="creare_cont.html">Creare cont</a></li>
+  </ul>
+</nav>
+<div class="petshop">
+                <img src="../Imagini/cart1.png" id="cart" alt="poza" />
+                <div id="shopping"><p id="total">Total:<i> 0 </i>RON</p></div>
+</div>
+<div class="example">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<div class="search"><i class="fa fa-search"></i></div></div>
+<ul id="myUL">
+ <div class="row">
+            <div class="column"><li>
+                <div class="content" id="myModal">
+                    <img
+                        src="../Imagini/jucariep.png"
+                        alt="imagine"
+                        class="Img"
+                        style="width:100%"
+                    />
+                    <div class="descriere">
+                        <h3>Ansamblu de joaca pentru pisici</h3>
+                    </div>
+                    <div class="price">
+                        <p>549.99 RON</p>
+                    </div>
+                    <h5>138 cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+            <div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p4.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Jucarie pentru pisici undita cu soarece</h3>
+                    </div>
+                    <div class="price">
+                        <p>11.99 RON</p>
+                    </div>
+                    <h5>100cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+            <div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p5.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Litiera pentru pisici</h3>
+                    </div>
+                    <div class="price">
+                        <p>39.99 RON</p>
+                    </div>
+                    <h5>50x40x14.5 cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+            <div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p6.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Geanta de transport pentru caini si pisici</h3>
+                    </div>
+                    <div class="price">
+                        <p>439.99 RON</p>
+                    </div>
+                    <h5>81x58x58 cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+            <div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p7.png"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Set 2 castroane ceramice cu suport metalic</h3>
+                    </div>
+
+                    <div class="price">
+                        <p>39.99 RON</p>
+                    </div>
+
+                    <h5>0.25 L</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+            <div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p8.png"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Haina pentru caini</h3>
+                    </div>
+
+                    <div class="price">
+                        <p>119.99 RON</p>
+                    </div>
+
+                    <h5>36 cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+            <div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p9.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Jucarie pentru caini Sfoara</h3>
+                    </div>
+                    <div class="price">
+                        <p>16.99 RON</p>
+                    </div>
+                    <h5>38 cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+            <div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p10.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Minge pentru caini</h3>
+                    </div>
+                    <div class="price">
+                        <p>11.99 RON</p>
+                    </div>
+                    <h5>9 cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+			<div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p11.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Set Lesa+Ham</h3>
+                    </div>
+                    <div class="price">
+                        <p>54.99 RON</p>
+                    </div>
+                    <h5>Caini de talie mica</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+			<div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p12.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Pod suspendat pentru rozatoare si pasari</h3>
+                    </div>
+                    <div class="price">
+                        <p>43.99 RON</p>
+                    </div>
+                    <h5>35x15 cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+			<div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p13.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Cuib din lemn pentru pasari</h3>
+                    </div>
+                    <div class="price">
+                        <p>24.99 RON</p>
+                    </div>
+                    <h5>11.5x12.5x12cm</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div></li>
+            </div>
+			<div class="column"><li>
+                <div class="content">
+                    <img
+                        src="../Imagini/p14.jpg"
+                        alt="imagine"
+                        class="Img"
+                    />
+                    <div class="descriere">
+                        <h3>Perie dubla</h3>
+                    </div>
+                    <div class="price">
+                        <p>23.99 RON</p>
+                    </div>
+                    <h5>lemn, plastic si metal</h5>
+                    <div class="cls">
+                        <button type="button" class="btn btn-outline-dark cart">
+                            <a>
+                                <i class="fas fa-shopping-cart fa-2x"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div></li>
+        </div>
+	</ul>	
+            
+
+<script src="../JS/petshop.js"></script>
+
+</body>
+</html>
